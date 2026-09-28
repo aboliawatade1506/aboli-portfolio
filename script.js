@@ -264,4 +264,75 @@
     });
   }
 
+  // -------------------------------------------------------------------------
+  // 8. Resume Preview Modal
+  // -------------------------------------------------------------------------
+  const resumeModal = document.getElementById('resumeModal');
+  const viewResumeBtns = document.querySelectorAll('.btn-view-resume');
+  const closeResumeBtns = document.querySelectorAll('.btn-close-resume');
+  const printResumeBtn = document.getElementById('btnPrintResume');
+
+  function openResumeModal() {
+    if (resumeModal) {
+      resumeModal.classList.add('open');
+      resumeModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeResumeModal() {
+    if (resumeModal) {
+      resumeModal.classList.remove('open');
+      resumeModal.setAttribute('aria-hidden', 'true');
+      const mobileNav = document.querySelector('.mobile-nav');
+      if (!mobileNav || !mobileNav.classList.contains('open')) {
+        document.body.style.overflow = '';
+      }
+    }
+  }
+
+  viewResumeBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openResumeModal();
+    });
+  });
+
+  closeResumeBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeResumeModal();
+    });
+  });
+
+  if (resumeModal) {
+    resumeModal.addEventListener('click', (e) => {
+      if (e.target === resumeModal) {
+        closeResumeModal();
+      }
+    });
+  }
+
+  if (printResumeBtn) {
+    printResumeBtn.addEventListener('click', () => {
+      const iframe = document.getElementById('resumeIframe');
+      if (iframe && iframe.contentWindow) {
+        try {
+          iframe.contentWindow.focus();
+          iframe.contentWindow.print();
+          return;
+        } catch (err) {
+          // fallback
+        }
+      }
+      window.open('resume.html', '_blank');
+    });
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && resumeModal && resumeModal.classList.contains('open')) {
+      closeResumeModal();
+    }
+  });
+
 })();

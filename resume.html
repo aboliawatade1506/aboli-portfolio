@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aboli Awatade - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 16mm;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.45;
+      font-size: 10pt;
+    }
+    .header {
+      border-bottom: 2px solid #1d4ed8;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .name-title h1 {
+      font-size: 22pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      margin-bottom: 3px;
+    }
+    .name-title h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #1d4ed8;
+    }
+    .contact-details {
+      text-align: right;
+      font-size: 8.5pt;
+      color: #475569;
+      line-height: 1.5;
+    }
+    .contact-details a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    .section {
+      margin-bottom: 11px;
+    }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title::before {
+      content: "";
+      width: 4px;
+      height: 11pt;
+      background: #1d4ed8;
+      display: inline-block;
+      border-radius: 2px;
+    }
+    p.summary {
+      font-size: 9.2pt;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px 14px;
+      font-size: 8.8pt;
+    }
+    .skill-item strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+    .skill-item span {
+      color: #475569;
+    }
+    .experience-item, .project-item {
+      margin-bottom: 9px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .role-title {
+      font-size: 9.8pt;
+      font-weight: 750;
+      color: #0f172a;
+    }
+    .company-title {
+      font-weight: 700;
+      color: #1d4ed8;
+    }
+    .date-badge {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #475569;
+    }
+    ul.bullets {
+      list-style-type: square;
+      padding-left: 16px;
+      margin-top: 3px;
+    }
+    ul.bullets li {
+      font-size: 8.7pt;
+      color: #334155;
+      line-height: 1.4;
+      margin-bottom: 3px;
+    }
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+    .tech-pill-list {
+      margin-top: 3px;
+      font-size: 8pt;
+      color: #475569;
+    }
+    .tech-pill-list strong {
+      color: #0f172a;
+    }
+    .education-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .edu-degree {
+      font-size: 9.5pt;
+      font-weight: 750;
+      color: #0f172a;
+    }
+    .edu-school {
+      font-size: 9pt;
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="name-title">
+      <h1>Aboli Awatade</h1>
+      <h2>Software Developer (.NET & Full Stack)</h2>
+    </div>
+    <div class="contact-details">
+      <div>Email: <a href="mailto:aboliawatade0615@gmail.com">aboliawatade0615@gmail.com</a></div>
+      <div>Phone: <a href="tel:+919175676465">+91 9175676465</a></div>
+      <div>Location: Maharashtra, India</div>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section class="section">
+    <h3 class="section-title">Professional Summary</h3>
+    <p class="summary">
+      Software Developer with <strong>1.8+ years of experience</strong> in designing, developing, and maintaining business web applications using <strong>C#, ASP.NET Core, ASP.NET MVC, Web API, Angular, Entity Framework Core, and SQL Server</strong>. Adept at translating complex functional requirements into clean business logic, performant database operations, and secure RESTful services across Agile/Scrum environments.
+    </p>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="section">
+    <h3 class="section-title">Technical Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-item"><strong>Programming:</strong> <span>C#, OOP, SOLID Principles, LINQ, Generics, Collections, Exception Handling</span></div>
+      <div class="skill-item"><strong>Backend Development:</strong> <span>ASP.NET Core, ASP.NET MVC, Web API (RESTful), Entity Framework Core, ADO.NET</span></div>
+      <div class="skill-item"><strong>Frontend Development:</strong> <span>Angular, TypeScript, JavaScript, jQuery, AJAX, HTML5, CSS3, Bootstrap, Responsive UI</span></div>
+      <div class="skill-item"><strong>Database & SQL:</strong> <span>SQL Server, Stored Procedures, Views, Joins, CTEs, Query Optimization</span></div>
+      <div class="skill-item"><strong>Tools & Platforms:</strong> <span>Visual Studio, VS Code, Git, Postman, Swagger / OpenAPI, SSMS</span></div>
+      <div class="skill-item"><strong>Architecture & Practices:</strong> <span>REST APIs, Authentication & Authorization, RBAC, Validation, Debugging, Agile/Scrum</span></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section">
+    <h3 class="section-title">Professional Experience</h3>
+    <div class="experience-item">
+      <div class="item-header">
+        <div>
+          <span class="role-title">Software Developer</span> &mdash;
+          <span class="company-title">Stark Technology & Staffing Solutions</span>
+        </div>
+        <span class="date-badge">Feb 2025 – Present</span>
+      </div>
+      <ul class="bullets">
+        <li><strong>Application Engineering:</strong> Built web applications using C#, ASP.NET Core, ASP.NET MVC, Web API, Angular, and SQL Server.</li>
+        <li><strong>Requirement Delivery:</strong> Translated functional requirements into business logic, validation rules, UI components, API integrations, and database operations.</li>
+        <li><strong>API Integration:</strong> Delivered RESTful APIs and connected frontend applications with backend services for end-to-end business workflows.</li>
+        <li><strong>Database Optimization:</strong> Refined SQL queries, stored procedures, and database operations for data processing and reporting.</li>
+        <li><strong>Security & Access Control:</strong> Implemented authentication, authorization, role-based access control (RBAC), and application validations.</li>
+        <li><strong>Code Quality:</strong> Developed reusable application components; participated in debugging, testing, defect resolution, Agile/Scrum ceremonies, and code reviews.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section">
+    <h3 class="section-title">Commercial Projects</h3>
+
+    <!-- Project 1 -->
+    <div class="project-item">
+      <div class="item-header">
+        <div>
+          <span class="role-title">STMindScope</span> &mdash;
+          <span style="font-size: 8.5pt; color: #475569;">Psychological Testing & Appointment Management Platform</span>
+        </div>
+        <span class="date-badge">Team Lead</span>
+      </div>
+      <ul class="bullets">
+        <li>Designed expertise profile functionality for professional expertise information and related profile details.</li>
+        <li>Configured psychological test management features for test creation, configuration, and question management.</li>
+        <li>Managed appointment workflows covering requests, scheduling, confirmation, rescheduling, and cancellation.</li>
+        <li>Handled psychological test categories and review workflows including reviewing, approving, and rejecting tests.</li>
+        <li>Implemented business rules, validation logic, and database operations; guided module-level debugging and issue resolution.</li>
+      </ul>
+      <div class="tech-pill-list">
+        <strong>Technologies:</strong> C#, ASP.NET MVC, JavaScript, jQuery, AJAX, LINQ, ADO.NET, SQL Server, HTML5, CSS3, Bootstrap
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-item">
+      <div class="item-header">
+        <div>
+          <span class="role-title">STHarvestHolidays</span> &mdash;
+          <span style="font-size: 8.5pt; color: #475569;">Agrotourism & Farmhouse Merchant Onboarding Portal</span>
+        </div>
+        <span class="date-badge">Team Member</span>
+      </div>
+      <ul class="bullets">
+        <li>Led the farmhouse registration feature for onboarding and maintaining farmhouse information.</li>
+        <li>Developed a 6-stage registration workflow covering farm information, rooms, documents, amenities, media, and final review.</li>
+        <li>Enforced subscription-based eligibility rules against active subscription plans; connected Angular screens with ASP.NET Core Web APIs.</li>
+        <li>Implemented client-side and server-side validation; configured Entity Framework Core relationships.</li>
+      </ul>
+      <div class="tech-pill-list">
+        <strong>Technologies:</strong> C#, ASP.NET Core, Web API, Angular, EF Core, LINQ, SQL Server, Bootstrap
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-item">
+      <div class="item-header">
+        <div>
+          <span class="role-title">STProcura</span> &mdash;
+          <span style="font-size: 8.5pt; color: #475569;">Procurement & Inventory Management Platform (P2P)</span>
+        </div>
+        <span class="date-badge">Team Member</span>
+      </div>
+      <ul class="bullets">
+        <li>Controlled role and permission management including Read, Insert, Update, Delete, and Export actions.</li>
+        <li>Supported inventory management and Material Requirement Planning (MRP) workflows; worked on Purchase Requisition, Supplier Quotation, and Purchase Order processing.</li>
+        <li>Supported GRN, Quality Check, and Goods Return workflows; enhanced reporting with search, date-range filtering, and export.</li>
+      </ul>
+      <div class="tech-pill-list">
+        <strong>Technologies:</strong> C#, ASP.NET MVC, JavaScript, jQuery, AJAX, LINQ, ADO.NET, SQL Server, HTML5, CSS3, Bootstrap
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-item">
+      <div class="item-header">
+        <div>
+          <span class="role-title">STStaySmart</span> &mdash;
+          <span style="font-size: 8.5pt; color: #475569;">Hotel & Stay Management Application</span>
+        </div>
+        <span class="date-badge">Team Member</span>
+      </div>
+      <ul class="bullets">
+        <li>Supported management of rooms, bookings, customers, employees, services, and payments.</li>
+        <li>Produced room and booking reports covering availability, reservations, facilities, capacity, pricing, and room status.</li>
+        <li>Retrieved and processed business data through ADO.NET, SQL Server, and optimized stored procedures.</li>
+      </ul>
+      <div class="tech-pill-list">
+        <strong>Technologies:</strong> C#, WinForms, ADO.NET, SQL Server, Stored Procedures
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" style="margin-bottom: 0;">
+    <h3 class="section-title">Education</h3>
+    <div class="education-item">
+      <div>
+        <span class="edu-degree">B.Sc. Computer Science</span> &mdash;
+        <span class="edu-school">Solapur University, Solapur</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
